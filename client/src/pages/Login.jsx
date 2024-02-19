@@ -50,7 +50,7 @@ export default function SignIn() {
       if (data.success) {
         dispatch(authActions.login());
         alert("User Login Successfull");
-        navigate("/home");
+        navigate("/dashboard");
       }
     } catch (error) {
       console.log(error);
